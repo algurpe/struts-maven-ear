@@ -30,7 +30,7 @@ public class SomeMDB implements MessageListener{
 	@PersistenceContext( unitName = INames.PU_NAME )
     private EntityManager em;
  
-    //@Override
+    @Override
     public void onMessage( Message message ) {
         TextMessage txtMsg = ( TextMessage ) message;
  
